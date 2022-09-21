@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <style>
+        body {
+                background-image: url("./bg.png");
+                background-size: cover;
+            }
+            .page-container {
+                width: 75%;
+                margin: 0 auto;
+                padding: 20px;
+             }
+        .card-pages {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 10px;
+        }
+
+        .per-page {
+            background-color: whitesmoke;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px gray;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+            table, th, td {
+            border:1px solid black;
+        }
+        .table-value{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="page-container">
+        <div class="card-pages">
+            <div class="per-page">
+                <h1>What is the difference between local storage and session storage?</h1>
+                <p> <span><b>Answer: </b></span>The major differences between local storage and session storage are as follows:</p>
+                <div class="table-value">
+                    <table>
+                        <tr>
+                          <th>Local Storage</th>
+                          <th>Session Storage</th>
+                        </tr>
+                        <tr>
+                          <td>It allows 10MB of data to be stored.</td>
+                          <td>It allows 5MB of data to be stored.</td>
+                        </tr>
+                        <tr>
+                          <td>The stored data is not deleted when the browser is closed.</td>
+                          <td>The data is stored only for the session and will be deleted when the browser is closed.</td>
+                        </tr>
+                        <tr>
+                            <td>Local storage is useful for storing data that the user will need to access later, such as offline data.</td>
+                            <td>Session storage is a great way to improve the performance of your web applications.</td>
+                          </tr>
+                          <tr>
+                            <td>This is especially useful for storing data that you want to persist even if the user closes the browser, such as preferences or settings.</td>
+                            <td>Session storage is useful for storing data that is sensitive, such as login credentials.</td>
+                          </tr>
+                          <tr>
+                            <td>Local Storage is a new feature introduced in HTML5</td>
+                            <td>Session Storage is a new feature introduced in HTML5</td>
+                          </tr>
+                          <tr>
+                            <td>The data is not sent with the request from the client to the server.</td>
+                            <td>The data is not sent with the request from the client to the server.</td>
+                          </tr>
+                          <tr>
+                            <td>The data is stored on the browser and system.</td>
+                            <td>The data is stored on the browser only.</td>
+                          </tr>
+                      </table>
+                </div>
+            </div>
+            <div class="per-page">
+                <h1>What is the difference between global scope and block scope?</h1>
+                <p> <span><b>Answer: </b></span>The major differences between global scope and block scope are as follows:</p>
+                <div class="table-value">
+                    <table>
+                        <tr>
+                          <th>Global Scope</th>
+                          <th>Block Scope</th>
+                        </tr>
+                        <tr>
+                          <td>A variable exists inside or outside a block. If a variable is declared outside all functions or curly braces ({}), it exists in the global scope. The global variables can be accessed by any line of code in the program, including inside blocks.</td>
+                          <td>We’ve seen variables defined with the var keyword. Var can declare a variable either in the global or local scope. The variables that are declared within the block scope are comparable to local ones. They are available within the block that they are defined. ES6 introduced block scope by using the let and const keywords.</td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+            <div class="per-page">
+                <h1>How does the Event Loop works in JavaScript?</h1>
+                <p> <span><b>Answer: </b></span>The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process.</p>
+                <p>A queue is a data structure that works on the First in First out principle, so as tasks get pushed into the queue, they get out in that same order. Tasks that have been executed by the Web API’s, which are being pushed to the Task Queue, then go back to the Call Stack to get their result printed out.</p>
+            </div>
+            <div class="per-page">
+                <h1>How many way to get undefined in javascript.</h1>
+                <p> <span><b>Answer: </b></span>There are 8 ways to get undefined in javascript. Which are as follows:</p>
+                <p><span><b>01. </b></span>Variable that is not initialized will give undefined.</p>
+                <p><span><b>02. </b></span>Function with no return.</p>
+                <p><span><b>03. </b></span>Parameter that is not passed will be undefined.</p>
+                <p><span><b>04. </b></span>If return has nothing on the right side will return undefined.</p>
+                <p><span><b>05. </b></span>Property that doesn't exists on an object will give you undefined.</p>
+                <p><span><b>06. </b></span>Accessing array elements outside of the index range.</p>
+                <p><span><b>07. </b></span>Deleting an element inside an array.</p>
+                <p><span><b>08. </b></span>Set a value directly to undefined.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
